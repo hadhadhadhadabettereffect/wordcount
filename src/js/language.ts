@@ -1,3 +1,6 @@
+declare function require(url: string);
+const languageData = require("../data/languages.json");
+
 // navigator.language isn't standardized so checking possible values
 // defaulting to English if no language detected
 var language = (navigator.language ||
@@ -12,8 +15,20 @@ export function getLanguage () : string {
     return language;
 }
 
-export function setLanguage (lang: string) {
+/**
+ * set language via select element
+ * @param lang new language code
+ * @return true if language change requires a dom update
+ */
+export function setLanguage (lang: string) : boolean {
+    var requiresUpdate = false;
     if (language != lang) {
+        requiresUpdate = languageData[language].rtl !== languageData[lang].rtl;
         language = lang;
     }
+    return requiresUpdate;    
+}
+
+export function getLangDirection () : string {
+    return languageData[language].rtl ? "rtl" : "ltr";
 }

@@ -27,5 +27,8 @@
     "tsify": "^4.0.0",
     "typescript": "^2.8.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "xregexp": "^4.1.1"
   }
 }

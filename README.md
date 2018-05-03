@@ -9,3 +9,6 @@ word count demo project
     * pug for html
     * postcss for css
 * more details about installed packages and build options [here](https://github.com/hadhadhadhadabettereffect/static-frontend-template)
+
+## regex
+using [XRegExp](http://xregexp.com/api/) for unicode support

@@ -1,6 +1,7 @@
 import { getCounter } from "./countwords";
 import { getLanguage,
-    setLanguage } from "./language";
+    setLanguage,
+    getLangDirection } from "./language";
 
 const textEl = <HTMLTextAreaElement> document.getElementById("inputfield");
 const countEl = document.getElementById("wordcount");
@@ -9,13 +10,14 @@ const counter = getCounter(onCountUpdate);
 
 var inputChanged = false;
 var countChanged = false;
+var languageChanged = false;
 
 languageSelectEl.value = getLanguage();
 
 textEl.addEventListener("keydown", onInputChange, false);
 textEl.addEventListener("change", onInputChange, false);
 languageSelectEl.addEventListener("change", function (event) {
-    setLanguage(languageSelectEl.value);
+    languageChanged = setLanguage(languageSelectEl.value);
 }, false);
 
 // flag input change on keydown and change events
@@ -34,8 +36,8 @@ function onCountUpdate () {
 function applyChanges () {
     if (inputChanged) {
         let str = textEl.value;
-        // if at least 1 word character
-        if (/\w/gm.test(str)) {
+        // if at least 1 non-space character
+        if (/\S/gm.test(str)) {
             counter.count(str);
         }
         // if text box is empty but previous count > 0
@@ -48,6 +50,9 @@ function applyChanges () {
     if (countChanged) {
         countChanged = false;
         countEl.innerText = '' + counter.result;
+    }
+    if (languageChanged) {
+        textEl.style.direction = getLangDirection();
     }
 }
 
