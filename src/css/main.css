@@ -11,3 +11,7 @@
     width: 100%;
     min-height: $height--input;
 }
+
+.form-error {
+    border: 1px solid red;
+}

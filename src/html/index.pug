@@ -7,7 +7,11 @@ html
     body
         #content
             h1 word count
-            textarea(id="inputfield" autofocus placeholder="start typing here")
-            button#button count
+            #message
+            textarea(id="inputfield"
+                    name="input"
+                    autofocus
+                    placeholder="start typing here")
+            button(id="count" name="count") count
         each jsFile in jsFiles
             script(type="text/javascript" src=jsFile)

@@ -52,9 +52,8 @@ var browserifyOptions = mergeOptions({
     packageCache: {}
 }, "browserifyOptions", "js");
 
-var tsOptions = mergeOptions({
-    noImplicitAny: true
-}, "typescriptOptions", "js");
+var tsOptions = mergeOptions({},
+    "typescriptOptions", "js");
 
 var uglifyOptions = mergeOptions({
     output: {
