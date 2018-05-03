@@ -1,1 +1,13 @@
 @import "vars";
+
+
+#content {
+    width: $width--content;
+    max-width: 100%;
+    margin: 50px auto;
+}
+
+#inputfield {
+    width: 100%;
+    min-height: $height--input;
+}

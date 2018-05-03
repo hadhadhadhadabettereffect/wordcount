@@ -5,6 +5,9 @@ html
         each cssFile in cssFiles
             link(type="text/css" rel="stylesheet" href=cssFile)
     body
-        #main
+        #content
+            h1 word count
+            textarea(id="inputfield" autofocus placeholder="start typing here")
+            button#button count
         each jsFile in jsFiles
             script(type="text/javascript" src=jsFile)

@@ -1,5 +1,5 @@
-# wordcount
-wordcount demo project
+# word count
+word count demo project
 
 ## local setup
 * `$ npm install` to install dependencies
