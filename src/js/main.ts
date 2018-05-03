@@ -1,38 +1,43 @@
-const inputEl = <HTMLTextAreaElement> document.getElementById("inputfield");
-const buttonEl = document.getElementById("count");
-const msgEl = document.getElementById("message");
+import {getCounter} from "./countwords";
 
-// form is invalid if no text was entered in inputEl
-// truth value is set when count button is clicked
-var formIsValid = true;
-var wordCount = 0;
+const textEl = <HTMLTextAreaElement> document.getElementById("inputfield");
+const countEl = document.getElementById("wordcount");
+const counter = getCounter(onCountUpdate);
 
-buttonEl.addEventListener("click", handleButtonClick, false);
+var inputChanged = false;
+var countChanged = false;
 
-function handleButtonClick (event: MouseEvent) {
-    // regex to check for at least one word char
-    if (formIsValid !== /\w/gm.test(inputEl.value)) {
-        formIsValid = !formIsValid;
-        requestAnimationFrame(updateErrorStatus);    
+textEl.addEventListener("keydown", handleInput, false);
+textEl.addEventListener("change", handleInput, false);
+
+function handleInput (event) {
+    inputChanged = true;
+}
+
+function applyChanges () {
+    if (inputChanged) {
+        let str = textEl.value;
+        if (/\w/gm.test(str)) {
+            counter.count(str);
+        } else if (counter.result) {
+            counter.result = 0;
+            countChanged = true;
+        }
     }
-    if (formIsValid) setTimeout(countWords, 0);
-}
-
-function updateErrorStatus () {
-    if (formIsValid) {
-        inputEl.className = "";
-        msgEl.innerText = "";
-    } else {
-        inputEl.className = "form-error";
-        msgEl.innerText = "text input required";
+    if (countChanged) {
+        countChanged = false;
+        countEl.innerText = '' + counter.result;
     }
 }
 
-function countWords (text: string) {
-    wordCount = inputEl.value.match(/\w+/g).length;
-    requestAnimationFrame(showWordCount);
+function onCountUpdate () {
+    countChanged = true;
 }
 
-function showWordCount () {
-    window.alert(`Word count: ${wordCount}`);
+function mainLoop () {
+    requestAnimationFrame(mainLoop);
+    applyChanges();
 }
+
+requestAnimationFrame(mainLoop);
+

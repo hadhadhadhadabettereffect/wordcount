@@ -2,10 +2,11 @@ extends layout
 block content
     #content
         h1 word count
-        #wordcount
+        #message
         textarea(id="inputfield"
                 name="input"
                 autofocus
                 placeholder="start typing here")
+        button(id="count" name="count") count
 block scripts
-    script(src="js/main.js")
+    script(src="js/default.js")

@@ -1,0 +1,10 @@
+doctype html
+html
+    head
+        title=title
+        each cssFile in cssFiles
+            link(type="text/css" rel="stylesheet" href=cssFile)
+    body
+        block content
+        block scripts
+            script(type="text/javascript" src="js/worker.js")
