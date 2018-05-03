@@ -1,0 +1,292 @@
+{
+    "af": {
+        "en": "Afrikaans",
+        "name": "Afrikaans",
+        "rtl": false
+    },
+    "ar": {
+        "en": "Arabic",
+        "name": "عربى",
+        "rtl": true
+    },
+    "bn": {
+        "en": "Bengali",
+        "name": "বাংলা",
+        "rtl": false
+    },
+    "bo": {
+        "en": "Tibetan",
+        "name": "བོད་སྐད་",
+        "rtl": true
+    },
+    "ca": {
+        "en": "Catalan",
+        "name": "Català",
+        "rtl": false
+    },
+    "ch": {
+        "en": "Chamorro",
+        "name": "Chamoru",
+        "rtl": false
+    },
+    "ce": {
+        "en": "Chechen",
+        "name": "Нохчийн",
+        "rtl": false
+    },
+    "cs": {
+        "en": "Czech",
+        "name": "Čeština",
+        "rtl": false
+    },
+    "cy": {
+        "en": "Welsh",
+        "name": "Cymraeg",
+        "rtl": false
+    },
+    "da": {
+        "en": "Danish",
+        "name": "Dansk",
+        "rtl": false
+    },
+    "de": {
+        "en": "German",
+        "name": "Deutsche",
+        "rtl": false
+    },
+    "eu": {
+        "en": "Basque",
+        "name": "Euskara",
+        "rtl": false
+    },
+    "hr": {
+        "en": "Croatian",
+        "name": "Hrvatski",
+        "rtl": false
+    },
+    "bg": {
+        "en": "Bulgarian",
+        "name": "Български",
+        "rtl": false
+    },
+    "el": {
+        "en": "Greek",
+        "name": "Ελληνικά",
+        "rtl": false
+    },
+    "en": {
+        "en": "English",
+        "name": "English",
+        "rtl": false
+    },
+    "es": {
+        "en": "Spanish",
+        "name": "Español",
+        "rtl": false
+    },
+    "et": {
+        "en": "Estonian",
+        "name": "Eesti",
+        "rtl": false
+    },
+    "fa": {
+        "en": "Farsi | Persian",
+        "name": "ﻯﺭﺩ | دری",
+        "rtl": false
+    },
+    "fi": {
+        "en": "Finnish",
+        "name": "Suomi",
+        "rtl": false
+    },
+    "fr": {
+        "en": "French",
+        "name": "Français",
+        "rtl": false
+    },
+    "ga": {
+        "en": "Irish",
+        "name": "Gaeilge",
+        "rtl": false
+    },
+    "he": {
+        "en": "Hebrew",
+        "name": "עִבְרִית",
+        "rtl": false
+    },
+    "hi": {
+        "en": "Hindi",
+        "name": "हिंदी",
+        "rtl": false
+    },
+    "ht": {
+        "en": "Haitian Creole",
+        "name": "kreyòl",
+        "rtl": false
+    },
+    "id": {
+        "en": "Indonesian",
+        "name": "Bahasa Indonesia",
+        "rtl": false
+    },
+    "is": {
+        "en": "Icelandic",
+        "name": "Íslenska",
+        "rtl": false
+    },
+    "it": {
+        "en": "Italian",
+        "name": "Italiano",
+        "rtl": false
+    },
+    "ja": {
+        "en": "Japanese",
+        "name": "日本語",
+        "rtl": false
+    },
+    "jv": {
+        "en": "Javanese",
+        "name": "basa Jawa",
+        "rtl": false
+    },
+    "ko": {
+        "en": "Korean",
+        "name": "한국어",
+        "rtl": false
+    },
+    "ku": {
+        "en": "Kurdish",
+        "name": "kurmancî",
+        "rtl": false
+    },
+    "lt": {
+        "en": "Lithuanian",
+        "name": "Lietuviškai",
+        "rtl": false
+    },
+    "lv": {
+        "en": "Latvian",
+        "name": "Latviešu",
+        "rtl": false
+    },
+    "mn": {
+        "en": "Mongolian",
+        "name": "Монгол хэл",
+        "rtl": false
+    },
+    "ms": {
+        "en": "Malay",
+        "name": "Bahasa Melayu",
+        "rtl": false
+    },
+    "my": {
+        "en": "Burmese",
+        "name": "မြန်မာ",
+        "rtl": false
+    },
+    "ne": {
+        "en": "Nepali",
+        "name": "नेपाली",
+        "rtl": false
+    },
+    "nl": {
+        "en": "Dutch/Flemish",
+        "name": "",
+        "rtl": false
+    },
+    "no": {
+        "en": "Norwegian",
+        "name": "norsk",
+        "rtl": false
+    },
+    "pa": {
+        "en": "Punjabi",
+        "name": "ਪੰਜਾਬੀ",
+        "rtl": false
+    },
+    "pi": {
+        "en": "Pali",
+        "name": "पािळ",
+        "rtl": false
+    },
+    "pl": {
+        "en": "Polish",
+        "name": "Polski",
+        "rtl": false
+    },
+    "pt": {
+        "en": "Portuguese",
+        "name": "Português",
+        "rtl": false
+    },
+    "ro": {
+        "en": "Romanian",
+        "name": "Româneşte",
+        "rtl": false
+    },
+    "ru": {
+        "en": "Russian",
+        "name": "Русский",
+        "rtl": false
+    },
+    "sk": {
+        "en": "Slovak",
+        "name": "Slovenčina",
+        "rtl": false
+    },
+    "sv": {
+        "en": "Swedish",
+        "name": "Svenska",
+        "rtl": false
+    },
+    "sw": {
+        "en": "Swahili",
+        "name": "kiSwahili",
+        "rtl": false
+    },
+    "ta": {
+        "en": "Tamil",
+        "name": "தமிழ்",
+        "rtl": false
+    },
+    "tl": {
+        "en": "Tagalog",
+        "name": "Tagalog",
+        "rtl": false
+    },
+    "tr": {
+        "en": "Turkish",
+        "name": "Türkçe",
+        "rtl": false
+    },
+    "ty": {
+        "en": "Tahitian",
+        "name": "te reo Tahiti",
+        "rtl": false
+    },
+    "uk": {
+        "en": "Ukrainian",
+        "name": "Українська",
+        "rtl": false
+    },
+    "ur": {
+        "en": "Urdu",
+        "name": "اُردو",
+        "rtl": false
+    },
+    "vi": {
+        "en": "Vietnamese",
+        "name": "Tiếng Việt",
+        "rtl": false
+    },
+    "zh": {
+        "en": "Chinese",
+        "name": "中文",
+        "rtl": false
+    },
+    "zu": {
+        "en": "Zulu",
+        "name": "isiZulu",
+        "rtl": false
+    }
+}

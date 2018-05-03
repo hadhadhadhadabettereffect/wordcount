@@ -1,6 +1,6 @@
 {
     "html": {
-        "src": ["src/html/index.pug", "src/html/default.pug"],
+        "src": ["src/html/index.pug"],
         "outDir": "build/html",
         "minify": false
     },
@@ -11,7 +11,7 @@
         "plugins": ["postcss-import", "precss", "autoprefixer"]
     },
     "js": {
-        "src": ["src/js/main.ts", "src/js/worker.ts", "src/js/default.ts"],
+        "src": ["src/js/main.ts", "src/js/worker.ts"],
         "outDir": "build/js",
         "minify": false
     }
