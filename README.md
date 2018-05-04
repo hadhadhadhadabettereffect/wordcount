@@ -1,5 +1,5 @@
 # word count
-word count demo project
+word count demo project. can be see [here](https://hadhadhadhadabettereffect.github.io/wordcount/)
 
 ## local setup
 * `$ npm install` to install dependencies
