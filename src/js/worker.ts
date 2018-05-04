@@ -39,7 +39,6 @@ function detectRtl () {
     let checkRtl = reg_rtl.test(text);
     if (rtl !== checkRtl) {
         rtl = checkRtl;
-        console.log(rtl);
         postMessage({
             flag: ChangeType.rtl_mask,
             key: "rtl",

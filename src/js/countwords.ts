@@ -29,14 +29,9 @@ export function getCounter (cb) {
         };
     } else {
         console.log("WebWorker not supported. Running count on main thread. Unicode support limited.")
-        var str = '';
-         function asyncCount () {
-            counter.result = str.match(/\S+/gm).length;
-            cb();
-        }
         counter.count = function (text: string) {
-            str = text;
-            setTimeout(asyncCount, 0);
+            counter.result = text.match(/\S+/gm).length;
+            cb();
         };
     }
     return counter;
