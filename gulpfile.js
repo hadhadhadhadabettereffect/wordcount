@@ -15,8 +15,7 @@ const autoprefixer = require("autoprefixer"),
     precss = require("precss"),
     postcssImport = require("postcss-import");
 const config = require("./config.json"),
-    package = require("./package.json"),
-    languages = require("./src/data/languages.json");
+    package = require("./package.json");
 
 // file urls relative to dist index.html
 var jsFiles = config.js.src.map((srcFile) => {
@@ -68,8 +67,7 @@ var pugOptions = mergeOptions({
     data: {
         title: package.name,
         cssFiles: cssFiles,
-        jsFiles: jsFiles,
-        languages: languages
+        jsFiles: jsFiles
     }
 }, "pugOptions", "html");
 
